@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: rickwillemsepipelinesdotnetcoredocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rickwillemsepipelinesdotnetcoredocker 
+    spec:
+      containers:
+        - name: rickwillemsepipelinesdotnetcoredocker 
+          image: mycontainerregistry123456.azurecr.io/rickwillemsepipelinesdotnetcoredocker 
+          ports:
+          - containerPort: 80
